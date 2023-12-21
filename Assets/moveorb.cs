@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Moveorb : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Moveorb : MonoBehaviour
   public float horizVel = 0;
   public int laneNum = 2;
   public string controlLocked = "n";
-
+  public Transform boomObj;
   // Start is called before the first frame update
   // void Start()
   // {
@@ -46,14 +47,19 @@ public class Moveorb : MonoBehaviour
     if (other.gameObject.CompareTag("lethal"))
     {
       Destroy(gameObject);
+      GM.zVelAdj = 0;
+      Instantiate(boomObj,transform.position,boomObj.rotation);
+      GM.lvlCompStatus = "Fail";
     }
     if (other.gameObject.name == "Capsule")
     {
       Destroy(other.gameObject);
     }
+
   }
 
-  void OnTriggerEnter(Collider other) {
+  void OnTriggerEnter(Collider other)
+  {
     if (other.gameObject.name == "rampbottomtrig")
     {
       GM.vertVel = 2;
@@ -61,6 +67,16 @@ public class Moveorb : MonoBehaviour
     if (other.gameObject.name == "ramptoptrig")
     {
       GM.vertVel = 0;
+    }
+    if (other.gameObject.name == "exit")
+    {
+      GM.lvlCompStatus = "Success!";
+      SceneManager.LoadScene("LevelComp");
+    }
+    if (other.gameObject.name == "Coins")
+    {
+      Destroy(other.gameObject);
+      GM.totalCoins++;
     }
   }
 

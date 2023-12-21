@@ -11,6 +11,14 @@ public class Effacts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(3,0,0);
+        if (gameObject.name == "Capsule")
+        {
+            transform.Rotate(3,0,0);    
+        }
+        if (gameObject.name == "Coins")
+        {
+            transform.Rotate(0,0,3);
+        }
+        
     }
 }
