@@ -4,9 +4,15 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - BlockMidPit: {fileID: 9052160218232386562, guid: 9c8c6c15ab58f3e4a90813e1d84ece06,
+  - BlockMidPit: {fileID: 6423885211882424424, guid: b3c3d79d6ab27c4428d63aeaef5d1552,
       type: 3}
   - BlockNoPit: {fileID: 6768287724668299536, guid: 424101e9e999c2d42877924c09bf17da,
+      type: 3}
+  - coinsObj: {fileID: 3542886438419687340, guid: c174ea6fd72d3ac49b98f7f0c33db321,
+      type: 3}
+  - obsObj: {fileID: 4654108959124828908, guid: 27c710f8f4f0195458052f819cbeff9c,
+      type: 3}
+  - capsuleObj: {fileID: 1161835306200135263, guid: f0adbafd591582b42bac249afe0bb001,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

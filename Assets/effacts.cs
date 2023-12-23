@@ -11,11 +11,11 @@ public class Effacts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "Capsule")
+        if (gameObject.name == "Capsule(Clone)")
         {
             transform.Rotate(3,0,0);    
         }
-        if (gameObject.name == "Coins")
+        if (gameObject.name == "Coins(Clone)")
         {
             transform.Rotate(0,0,3);
         }

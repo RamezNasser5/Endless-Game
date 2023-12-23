@@ -51,7 +51,7 @@ public class Moveorb : MonoBehaviour
       Instantiate(boomObj,transform.position,boomObj.rotation);
       GM.lvlCompStatus = "Fail";
     }
-    if (other.gameObject.name == "Capsule")
+    if (other.gameObject.name == "Capsule(Clone)")
     {
       Destroy(other.gameObject);
     }
@@ -73,7 +73,7 @@ public class Moveorb : MonoBehaviour
       GM.lvlCompStatus = "Success!";
       SceneManager.LoadScene("LevelComp");
     }
-    if (other.gameObject.name == "Coins")
+    if (other.gameObject.name == "Coins(Clone)")
     {
       Destroy(other.gameObject);
       GM.totalCoins++;
