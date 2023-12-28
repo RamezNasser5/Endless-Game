@@ -15,11 +15,15 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (gameObject.name == "Coins")
         {
-            GetComponent<TextMeshPro>().text = "Coins : " + GM.totalCoins;
+            // if (Moveorb.totalScore < Moveorb.totalCoins)
+            // {
+            //     Moveorb.totalScore = Moveorb.totalCoins;
+            // }
+            GetComponent<TextMeshPro>().text = "score : " + Moveorb.totalCoins;
         }
         if (gameObject.name == "Time")
         {
-            GetComponent<TextMeshPro>().text = "Time : " + GM.totalTime;
+            GetComponent<TextMeshPro>().text = "Time : " + Moveorb.roundedTime;
         }
         if (gameObject.name == "RunStatus")
         {
