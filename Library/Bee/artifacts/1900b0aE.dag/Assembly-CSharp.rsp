@@ -370,6 +370,7 @@
 "Assets/backGround.cs"
 "Assets/effacts.cs"
 "Assets/GM.cs"
+"Assets/input_field.cs"
 "Assets/movecam.cs"
 "Assets/moveorb.cs"
 "Assets/stats.cs"

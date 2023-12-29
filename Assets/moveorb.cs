@@ -15,6 +15,7 @@ public class Moveorb : MonoBehaviour
     public float horizVel = 0;
     public int laneNum = 2;
     public string controlLocked = "n";
+    public static string userName = "user";
     public Transform boomObj;
     public AudioSource coinSound; // Add an AudioSource variable
     public Animator animator;

@@ -27,7 +27,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
         if (gameObject.name == "RunStatus")
         {
-            GetComponent<TextMeshPro>().text = GM.lvlCompStatus;
+            GetComponent<TextMeshPro>().text = "User Name : "+Moveorb.userName;
         }
         
         

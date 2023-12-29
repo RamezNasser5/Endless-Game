@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 public class GM : MonoBehaviour
 {
     public static float vertVel = 0;
-    
-    
     public static float zVelAdj = 1;
     public static string lvlCompStatus = "";
     public Transform BlockNoPit;
