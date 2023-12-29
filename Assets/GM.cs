@@ -8,7 +8,6 @@ public class GM : MonoBehaviour
     
     public static float zVelAdj = 1;
     public static string lvlCompStatus = "";
-    public Transform BlockMidPit;
     public Transform BlockNoPit;
     public Transform coinsObj;
     public Transform obsObj;
@@ -21,8 +20,8 @@ public class GM : MonoBehaviour
     void Start()
     {
 
-        Instantiate(BlockMidPit, new Vector3(2, 6f, 40), BlockMidPit.rotation);
-        Instantiate(BlockMidPit, new Vector3(2, 6f, 44), BlockMidPit.rotation);
+        Instantiate(BlockNoPit, new Vector3(2, 6f, 40), BlockNoPit.rotation);
+        Instantiate(BlockNoPit, new Vector3(2, 6f, 44), BlockNoPit.rotation);
 
         Instantiate(BlockNoPit, new Vector3(2, 6f, 48), BlockNoPit.rotation);
         Instantiate(BlockNoPit, new Vector3(2, 6f, 52), BlockNoPit.rotation);
