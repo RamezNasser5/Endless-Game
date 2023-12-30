@@ -37,8 +37,8 @@ public class Moveorb : MonoBehaviour
             laneNum -= 1;
             horizVel = -2;
             controlLocked = "y";
-            StartCoroutine(StopSlide());
             animator.SetTrigger("move_left");
+            StartCoroutine(StopSlide());
         }
 
         // Check for user input to steer right
@@ -109,9 +109,7 @@ public class Moveorb : MonoBehaviour
     IEnumerator StopSlide()
     {
         yield return new WaitForSeconds(.5f);
-
         horizVel = 0;
         controlLocked = "n";
-
     }
 }

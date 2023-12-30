@@ -7,7 +7,7 @@ public class InputField : MonoBehaviour
     public TMP_InputField tMP_InputField;
     // Start is called before the first frame update
     public void OnButtonCleck() {
-        if (tMP_InputField.text != "")
+        if (tMP_InputField.text != "Entre Name")
         {
             Moveorb.userName = tMP_InputField.text;
         }

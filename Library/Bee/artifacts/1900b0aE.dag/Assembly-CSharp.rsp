@@ -373,6 +373,7 @@
 "Assets/input_field.cs"
 "Assets/movecam.cs"
 "Assets/moveorb.cs"
+"Assets/restart.cs"
 "Assets/stats.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
